@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Edema Management — 浮腫の臨床まとめ</title>
+<style>
+  :root {
+    --primary: #2c5f7c;
+    --bg: #f8f9fa;
+    --card: #ffffff;
+    --border: #dee2e6;
+    --text: #333;
+    --muted: #6c757d;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', 'Meiryo', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero {
+    width: 100%;
+    background: linear-gradient(135deg, #1a5276, #2980b9, #16a085);
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px 40px;
+  }
+  .hero h1 { font-size: 2rem; margin-bottom: 8px; letter-spacing: 1px; }
+  .hero p { font-size: 1rem; opacity: .9; }
+  .container { max-width: 800px; width: 100%; padding: 30px 16px; }
+  .section-title {
+    font-size: 1.1rem; font-weight: 700; color: var(--primary);
+    margin-bottom: 14px; padding-left: 10px; border-left: 4px solid var(--primary);
+  }
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 16px; margin-bottom: 30px;
+  }
+  .card {
+    background: var(--card); border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,.07);
+    overflow: hidden; transition: transform .2s, box-shadow .2s;
+    text-decoration: none; color: inherit; display: block;
+  }
+  .card:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0,0,0,.12); }
+  .card-color { height: 6px; }
+  .card-body { padding: 18px 20px; }
+  .card-body h3 { font-size: 1.05rem; margin-bottom: 6px; display: flex; align-items: center; gap: 8px; }
+  .card-body p { font-size: .85rem; color: var(--muted); line-height: 1.6; }
+  .card-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 10px; }
+  .card-tags span { font-size: .72rem; background: #e8f0fe; color: var(--primary); padding: 2px 8px; border-radius: 4px; }
+  footer { text-align: center; padding: 20px; font-size: .78rem; color: var(--muted); margin-top: auto; }
+  footer a { color: var(--primary); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+  @media (max-width: 600px) {
+    .hero h1 { font-size: 1.5rem; }
+    .card-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>Edema Management</h1>
+  <p>浮腫の鑑別・診断・治療をすぐに参照できるインタラクティブノート</p>
+</div>
+
+<div class="container">
+  <div class="section-title">Contents</div>
+  <div class="card-grid">
+
+    <a class="card" href="浮腫まとめ_復習用.html">
+      <div class="card-color" style="background: linear-gradient(90deg, #1a5276, #2980b9);"></div>
+      <div class="card-body">
+        <h3>🦵 浮腫まとめ（復習用）</h3>
+        <p>PODCAST鑑別アルゴリズム・診療フローチェックリスト・網羅的一目まとめ・参考文献の4タブ構成。Semantic Qualifierの自動生成、Wells基準・STOP-Bangスコア付き。</p>
+        <div class="card-tags">
+          <span>PODCAST鑑別</span>
+          <span>Semantic Qualifier</span>
+          <span>Wells基準</span>
+          <span>STOP-Bang</span>
+          <span>チェックリスト</span>
+        </div>
+      </div>
+    </a>
+
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 — <a href="https://github.com/takakoba6213/Edema-management" target="_blank">GitHub</a></p>
+</footer>
+
+</body>
+</html>
